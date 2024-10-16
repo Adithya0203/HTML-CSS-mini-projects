@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: #272829;
+    height: 80px;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+label.logo{
+    color:yellow;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: 600;
+}
+
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: 0.5s;
+}
+
+.checkBtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#check{
+    display: none;
+}
+
+/* .navbar{
+    background:#272829;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar .logo a{
+    font-size: 20px;
+    font-weight: 600;
+    color:yellow;
+    margin: 5px;
+} */
+
+/* .logo a{
+    font-size: 20px;
+    font-weight: 600;
+    color:yellow;
+    margin: 5px;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    color:white;
+    font-size:15px;
+    font-weight: 300;
+    margin-right: 25px;
+} */
+
+.hero-section{
+    position: relative;
+    background: url("images/background.png") no-repeat center;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero-elements{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+
+.hero-elements p{
+    font-size: 45px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.hero-elements h2{
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.hero-elements button{
+    background-color: #F0DE36;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #D71313;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.portfolio{
+    padding:5px;
+    z-index: -1;
+}
+
+.portfolio h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+}
+
+.portfolio p{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.portfolio .box-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+
+.portfolio .box-container .card{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:4px 20px;
+    margin: 10px;
+}
+
+.portfolio .box-container .card img{
+    width:250px
+}
+
+.portfolio .box-container .card h3{
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.portfolio .box-container .card p{
+    font-size: 20px;
+    text-justify: auto;
+}
+
+.container{
+    width: 100%;
+    margin: 5% 0;
+    z-index: -2;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 20px 0;
+    position: relative;
+}
+
+.container p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:30px;
+    margin-top: 35px;
+}
+
+.elements{
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.elements h3{
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.elements p{
+    text-justify: auto;
+}
+
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+
+@media(max-width:858px){
+    .checkBtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}

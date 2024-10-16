@@ -1,0 +1,29 @@
+.flag-container
+{   
+    position: absolute;
+    display: flex;
+    height:100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.green
+{
+    background-color:#008000;
+    height:100%;
+    width:33.3vw;
+}
+.white
+{
+    background-color:#ffffff;
+    height:100%;
+    width:33.3vw;
+}
+.red
+{
+    background-color:#d51b1b;
+    height:100%;
+    width:33.4vw;
+}
